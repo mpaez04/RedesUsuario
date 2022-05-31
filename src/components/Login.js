@@ -112,7 +112,6 @@ export function Login() {
         Google login
       </button>
       <p className="my-4 text-sm flex justify-between px-3">
-        Don't have an account?
         <Link to="/register" className="text-blue-700 hover:text-blue-900">
           Register
         </Link>
