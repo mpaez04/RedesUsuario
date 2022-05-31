@@ -38,10 +38,10 @@ export function Login() {
 
   const handleResetPassword = async (e) => {
     e.preventDefault();
-    if (!user.email) return setError("Write an email to reset password");
+    if (!user.email) return setError("Escribe un correo para restablecer la contraseña");
     try {
       await resetPassword(user.email);
-      setError('We sent you an email. Check your inbox')
+      setError('Te enviamos un correo electrónico. Revisa tu correo')
     } catch (error) {
       setError(error.message);
     }
@@ -61,7 +61,7 @@ export function Login() {
             htmlFor="email"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
-            Email
+            Correo
           </label>
           <input
             type="email"
@@ -69,7 +69,7 @@ export function Login() {
             id="email"
             onChange={handleChange}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            placeholder="youremail@company.tld"
+            placeholder="tucorreo@dominio.com"
           />
         </div>
         <div className="mb-4">
@@ -77,7 +77,7 @@ export function Login() {
             htmlFor="password"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
-            Password
+            contraseña
           </label>
           <input
             type="password"
@@ -94,14 +94,14 @@ export function Login() {
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
           >
-            Sign In
+            Iniciar Sesion
           </button>
           <a
             className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
             href="#!"
             onClick={handleResetPassword}
           >
-            Forgot Password?
+            Olvidaste tu contraseña?
           </a>
         </div>
       </form>
