@@ -68,7 +68,7 @@ export function Register() {
       </form>
       <p className="my-4 text-sm flex justify-between px-3">
         Already have an Account?
-        <Link to="/login" className="text-blue-700 hover:text-blue-900">
+        <Link to="/proyectoredesusuario" className="text-blue-700 hover:text-blue-900">
           Login
         </Link>
       </p>
